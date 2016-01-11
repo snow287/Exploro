@@ -13,6 +13,10 @@ public class Door extends GameObject {
 		super(description);
 		this.from = from;
 		this.to = to;
+		
+		// Add doors to rooms
+		from.addDoor(this);
+		to.addDoor(this);
 	}
 	
 	public Room getOtherRoom(Room room) {
