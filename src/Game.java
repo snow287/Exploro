@@ -13,6 +13,11 @@ public class Game {
 	 * Draws rooms and objects.
 	 */
 	public void gameInit() {
+		// Create rooms
+		Room lobby = new Room("Entrance to the manor", 10, 10);
+		Room kitchen = new Room("Smells of rotting flesh.", 10, 10);
 		
+		// Create doors
+		Door lobbyToKitchen = new Door("Off-white wooden door", lobby, kitchen);
 	}
 }
