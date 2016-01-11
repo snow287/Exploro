@@ -15,10 +15,10 @@ public class Room {
 	 * @param height Height of room grid in squares
 	 * @param doors List of doors
 	 */
-	public Room(String description, int width, int height, ArrayList<Door> doors) {
+	public Room(String description, int width, int height) {
 		this.description = description;
 		contents = new ArrayList<GameObject>();
-		this.doors = doors;
+		doors = new ArrayList<Door>();
 		this.width = width;
 		this.height = height;
 	}
@@ -37,6 +37,10 @@ public class Room {
 	
 	public ArrayList<GameObject> getContents() {
 		return contents;
+	}
+	
+	public void addDoor(Door door) {
+		doors.add(door);
 	}
 	
 }
