@@ -1,0 +1,49 @@
+//Imports
+
+//		Initialization
+//Declarations
+//vast majority of declarations should be defined on level loads (Load external game files)
+//Load image files
+//Assign image files
+
+//		Game Loop (30 cycles per second)
+//			AI Routines
+//				For each creature, balance imperatives
+//				Goal setting
+//				Action setting
+//			Update World
+//				For each creature,
+//					Carry out action sequence it's up to
+//					increment sequence towards completion
+//				For each object,
+//					decay/power loss
+//					reassign inventories
+//					alter state
+//				For each Door,
+//					update state
+//				For player,
+//					drain/DoT/resources/etc
+//			Render
+//				For each exploredRoom
+//					Render image for that room
+//					Render dimmed light
+//					Render KnownObjects
+//					Render Fog over
+//				Render currentRoom
+//					Render image for the room
+//					Render regular lights
+//					Render objects
+//				Render Icons
+//					Render backlight
+//					Render icons
+//				Render sounds
+//					for each sound
+//						create ripple if counter reaches interval, reset counter
+//					for each ripple
+//						render at current opacity and size
+//				Render UI
+//					For each item in sidelist
+//						Decay (opacity)
+//						Render each
+
+//Exit game
